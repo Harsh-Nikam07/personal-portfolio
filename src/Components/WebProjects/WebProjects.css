@@ -1,0 +1,148 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    font-size: 60px;
+
+}
+
+.project-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+
+.project-1:hover{
+    -webkit-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    -moz-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+}
+
+.project1-left-section{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    /* border: 2px solid red; */
+    width: auto;
+    height: 100%;
+    margin-left: 30px;
+    margin: 30px;
+
+}
+
+.project1-project-title{
+    display: flex;
+    font-size: 45px;
+    padding: 20px;
+}
+
+.project1-project-desc{
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    font-size: 25px;
+    width: 600px;
+}
+
+.project1-project-link-btn{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-top: 10px;
+    
+}
+
+.project1-project-link-btn button{
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.project1-project-link-btn button:hover{
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    -moz-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+}
+
+.project1-right-section img{
+    margin: 30px;
+    /* width: 560px;
+    height: 300px; */
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin-right: 30px;
+    border-radius: 30px;
+    transition: all 0.4s ease-out;
+
+}
+
+/* .project1-right-section img:hover{
+    -webkit-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    -moz-box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+    box-shadow: 10px 9px 36px -14px rgba(171,171,171,0.71);
+} */
+
+
+@media screen and (max-width: 700px){
+    /* .project1-right-section img{
+        margin: 15px;
+        width: 177px;
+        height: 80px;
+    } */
+}
+
+@media screen and (max-width: 400px){
+    .container h2{
+        font-size: 30px;
+    }
+
+    .project1-project-title{
+        font-size: 25px;
+    }
+
+    .project1-project-desc{
+        font-size: 15px;
+        width: 280px;
+    }
+
+    /* .project1-right-section img{
+        margin: 15px;
+        width: 277px;
+        height: 150px;
+    } */
+
+    .project1-project-link-btn button{
+        width: 115px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+}
+
+
+/* @media screen and (max-width: 500px){
+    .container p{
+        font-size: 50px;
+
+    }
+} */

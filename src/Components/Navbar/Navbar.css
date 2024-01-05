@@ -1,0 +1,108 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 7%;
+}
+
+.logo{
+    width: 30px;
+    margin-right: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+ul li:hover{
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 14px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.nav_toggler div{
+    width: 2.5rem;
+    height: 0.1rem;
+    margin: 0.4rem;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.nav_toggler{
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 700px){
+    .nav_toggler{
+        display: block;
+    }
+
+    .nav_menu{
+        position: fixed;
+        text-align: left;
+        left: 0;
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        transform: translateX(100%);
+        transition: 0.4s all ease;
+    }
+    .nav_item{
+        width: 87%;
+        padding: 20px;
+    }
+    
+
+    h1{
+        display: none;
+    }
+}
+
+
+.nav_active{
+    transform: translateX(0);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .lin3{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
